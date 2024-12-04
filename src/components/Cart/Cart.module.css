@@ -1,0 +1,57 @@
+/* Cart.module.css */
+.cart {
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+
+.cartTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.cartTable th,
+.cartTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.cartTable th {
+  background-color: #f2f2f2;
+}
+
+.quantityInput {
+  width: 50px;
+}
+
+.cartSummary {
+  margin-top: 20px;
+}
+
+.cartSummary h3 {
+  margin: 0 0 10px;
+}
+
+.cartSummary p {
+  margin: 5px 0;
+}
+
+.cartSummary button {
+  background-color: grey;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.cartSummary button:hover {
+  background-color: black;
+}
+.buyButton {
+  background-color: rgb(0, 136, 255);
+  width: 300px;
+}

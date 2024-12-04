@@ -1,0 +1,50 @@
+/* Contenedor principal del navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Espacio entre elementos: izquierda y derecha */
+  align-items: center; /* Centrar verticalmente */
+  padding: 10px 20px; /* Espaciado interno */
+  background-color: #282c34; /* Fondo oscuro */
+  color: white; /* Texto claro */
+}
+
+/* Estilo para los elementos de navegación principales (opcional) */
+.nav-items {
+  display: flex;
+  gap: 15px; /* Espaciado entre elementos */
+}
+/* Estilo para los enlaces de navegación */
+.nav-items a {
+  color: white; /* Letra blanca */
+  text-decoration: none; /* Sin subrayado */
+  font-size: 16px; /* Tamaño de fuente ajustable */
+  transition: color 0.3s ease; /* Efecto suave al pasar el mouse */
+}
+
+/* Estilo hover para mejorar la interacción */
+.nav-items a:hover {
+  color: #61dafb; /* Cambia el color al pasar el mouse (opcional) */
+}
+
+/* Login o Logout al final del navbar */
+.auth-section {
+  display: flex;
+  align-items: center; /* Centra el contenido verticalmente */
+  gap: 10px; /* Espaciado entre avatar, texto y botón */
+}
+
+.cartLink {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.cartCount {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 8px;
+}

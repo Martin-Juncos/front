@@ -1,0 +1,96 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font: inherit;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Contenedor principal del layout */
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Altura mínima de toda la ventana */
+}
+
+/* Navbar fijo en la parte superior */
+.navbar {
+  background-color: #282c34;
+  color: white;
+  padding: 15px 20px;
+}
+
+/* Footer fijo en la parte inferior */
+.footer {
+  background-color: #282c34;
+  color: white;
+  margin-top: auto; /* Empuja el footer al final de la página */
+}
+
+/* Contenido principal (Sidebar + Rutas) */
+.main-content {
+  display: flex;
+  flex: 1; /* Ocupa el espacio restante entre el navbar y el footer */
+}
+
+/* Sidebar a la izquierda */
+.sidebar {
+  width: 250px;
+  background-color: #f4f4f9;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+/* Contenido dinámico de las rutas */
+.content {
+  flex: 1; /* Ocupa el espacio restante al lado del sidebar */
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column; /* El sidebar se mueve arriba del contenido */
+  }
+
+  .sidebar {
+    width: 100%; /* Toma todo el ancho en pantallas pequeñas */
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+}

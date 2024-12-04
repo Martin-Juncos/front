@@ -1,0 +1,9 @@
+.currPage {
+  background-color: gray;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  background-color: #f9f9f9;
+}
